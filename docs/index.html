@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/RichMarker/favicon.ico"><title>RichMarker</title><link href="/RichMarker/css/app.e57a9272.css" rel="preload" as="style"><link href="/RichMarker/js/app.91459602.js" rel="preload" as="script"><link href="/RichMarker/js/chunk-vendors.110b89a8.js" rel="preload" as="script"><link href="/RichMarker/css/app.e57a9272.css" rel="stylesheet"></head><body><div id="app"></div><script>const callbacks = [];
+
+      function getScriptTag(src) {
+        const script = document.createElement('script');
+        script.src = src;
+        return script;
+      }
+      function initMap() {
+        callbacks.forEach(callback => {
+          callback();
+        })
+      };
+      window.initMap = initMap;
+      window.onMapReady = function (callback) {
+        callbacks.push(callback);
+      }</script><script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtFffk8mOilq_k0i5c2xpU8uBlJB_mM5c&callback=initMap&libraries=&v=weekly" defer></script><script src="/RichMarker/js/chunk-vendors.110b89a8.js"></script><script src="/RichMarker/js/app.91459602.js"></script></body></html>
