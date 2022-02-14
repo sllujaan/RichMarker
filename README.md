@@ -23,6 +23,37 @@ The RichMarker is a plugin for Google Maps ready to be used on mobile and deskto
 - Well documented.
 - k-means clustering (in progress).
 
+# Installation
+
+**For Commonjs & ESModules:**
+
+```js
+// in commonjs & ESModules
+import Timer from "./RichMap.js";
+// or
+// in commonjs
+const Timer = require("./RichMap.js");
+```
+
+**In Plain Javascript:**
+
+```html
+<!-- in html file -->
+<head>
+  ...
+  <script src="./RichMap.js"></script>
+  ...
+</head>
+<body>
+  ...
+  <script type="text/javascript">
+    // code
+  </script>
+</body>
+```
+
+
+
 Rich Map library for google maps with HTML markers and info windows + k-means clustering
 
 
