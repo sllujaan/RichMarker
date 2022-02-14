@@ -7,7 +7,7 @@
 ![image-3](https://user-images.githubusercontent.com/31973579/153803080-d0b311bf-23c5-416a-9cd5-461affe8396c.jpg)
 
 # Introduction
-The RichMarker is a plugin for Google Maps ready to be used on mobile and desktop devices. It supports HTML CSS JS Markers and Info Windows. Info Windows with IntelliSense builds to be opened on the appropriate aria available on the Map and are sticky on the Map. RichMarker and Info Windows have various events handlers, pre-built default styles, options, and features. k-means clustering is in progress and will be available soon. 
+The RichMarker is a plugin for Google Maps ready to be used on mobile and desktop devices. It supports HTML CSS JS Markers and Info Windows. Info Windows with IntelliSense builds to be opened on the appropriate aria available on the Map and are sticky on the Map. RichMarker and Info Windows have various events handlers, pre-built default styles, options, and features. **k-means clustering is in progress and will be available soon.**
 
 # Features
 - Five default Markers and Three Info Windows styles.
@@ -21,7 +21,7 @@ The RichMarker is a plugin for Google Maps ready to be used on mobile and deskto
 - Javascript options.
 - Custom Callbacks and Event Handlers.
 - Well documented.
-- k-means clustering (in progress).
+- **k-means clustering (in progress).**
 
 # Installation
 
@@ -445,3 +445,4 @@ Salman Altaf (sllujaan44@gmail.com).
 
 **RichMarker**  
 *v1.0.0*
+
