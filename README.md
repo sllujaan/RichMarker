@@ -52,6 +52,24 @@ const RichMap = require("./RichMap.js");
 </body>
 ```
 
+# Use
+
+```html
+<!-- in html file -->
+<head>
+  ...
+  <style>
+    .google-maps {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="map" class="google-maps"></div>
+  ...
+</body>
+```
 
 
 Rich Map library for google maps with HTML markers and info windows + k-means clustering
