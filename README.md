@@ -29,10 +29,10 @@ The RichMarker is a plugin for Google Maps ready to be used on mobile and deskto
 
 ```js
 // in commonjs & ESModules
-import Timer from "./RichMap.js";
+import RichMap from "./RichMap.js";
 // or
 // in commonjs
-const Timer = require("./RichMap.js");
+const RichMap = require("./RichMap.js");
 ```
 
 **In Plain Javascript:**
