@@ -154,6 +154,22 @@ richInfoWindow.addEventListener("mouseleave", e => {
 });
 ```
 
+# Configuration
+
+## RichMap Class
+
+Example:
+```typescript
+const richMap = new RichMap({
+  map   // google maps class
+});
+```
+
+## Functions:
+- [addMarker()](#configuration)
+- [getMarker()](#configuration)
+- [getInfoWindow()](#configuration)
+
 
 
 Rich Map library for google maps with HTML markers and info windows + k-means clustering
