@@ -68,8 +68,92 @@ const RichMap = require("./RichMap.js");
 <body>
   <div id="map" class="google-maps"></div>
   ...
+  ...
+  <script>
+    // script function
+    function getScriptTag(src) {
+      const script = document.createElement('script');
+      script.setAttribute("type", "module");
+      script.src = src;
+      return script;
+    }
+    // intialize the map
+    function initMap() {
+      const script = getScriptTag("./src/index.js");
+      document.head.appendChild(script);
+    };
+    window.initMap = initMap;
+  </script>
+
+    <!-- Load the Google Maps Library Now. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=(your-key)&callback=initMap&libraries=&v=weekly"
+      defer="defer">
+    </script>
 </body>
 ```
+
+**In (index.js) file:**
+
+```js
+// get the map div
+const mapDiv = document.getElementById("map");
+
+// initalize the map in the div
+const initMap = () => {
+  const myLatLng = { lat: 8.016, lng: 133.153 };
+  const map = new google.maps.Map(mapDiv, {
+    zoom: 3,
+    center: myLatLng,
+    disableDefaultUI: true,
+  });
+  window.map = map;
+};
+
+// call the initMap function
+initMap();
+
+// initalize the rich map plugin
+const richMap = new RichMap({
+  map
+});
+
+// add html marker
+const richMarker = richMap.addMarker({
+  domElement: richMap.getMarker("style-1"),
+  LatLng: { lat: -25.363, lng: 131.044 },
+  position: "bottomCenter"
+});
+
+// add html info window
+const richInfoWindow = richMarker.addInfoWindow({
+  domElement: richMap.getInfoWindow("style-1"),
+  offset: "10px"
+});
+
+// Event Listener for the richMarker
+richMarker.addEventListener("click", e => {
+  //console.log(e);
+});
+richMarker.addEventListener("mouseenter", e => {
+  //console.log(e);
+});
+richMarker.addEventListener("mouseleave", e => {
+  //console.log(e);
+});
+
+// Event Listener for the richInfoWindow
+richInfoWindow.addEventListener("click", e => {
+  //console.log(e);
+});
+richInfoWindow.addEventListener("mouseenter", e => {
+  //console.log(e);
+});
+richInfoWindow.addEventListener("mouseleave", e => {
+  //console.log(e);
+});
+```
+
 
 
 Rich Map library for google maps with HTML markers and info windows + k-means clustering
