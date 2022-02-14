@@ -442,3 +442,6 @@ richInfoWindow.addEventListener("mouseleave", e => {
 # About
 
 Salman Altaf (sllujaan44@gmail.com).
+
+**RichMarker**  
+*v1.0.0*
