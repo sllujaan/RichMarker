@@ -156,7 +156,7 @@ richInfoWindow.addEventListener("mouseleave", e => {
 
 # Configuration
 
-## RichMap Class
+# RichMap Class
 
 Example:
 ```typescript
@@ -251,7 +251,7 @@ const htmlInfoWindowStyle1 = richMap.getInfoWindow("style-1");
 
 ----
 
-## RichMarker Class
+# RichMarker Class
 
 Example:
 ```typescript
@@ -296,24 +296,72 @@ Example:
 richMarker.show();
 ```
 
+----
+
+### getZIndex()
+
+Syntax:
+```typescript
+getZIndex() : number
+```
+Example:
+```typescript
+const markerZIndex = richMarker.getZIndex();
+```
+
+----
+
+### addInfoWindow()
+
+Syntax:
+```typescript
+addInfoWindow({
+  domElement: HTMLElement,
+  offset: string
+}) : void
+```
+Example:
+```typescript
+richMarker.addInfoWindow({
+  domElement: richMap.getInfoWindow("style-1"),
+  offset: "10px"
+});
+```
+
 ### Possible values:
 **[domElement:](#configuration)**
 - HTMLElement
 
-**[LatLng:](#configuration)**  
-- LatLng (google maps class)
+**[offset:](#configuration)**
+- CSS Value
 
-**[position:](#configuration)**
-- topLeft
-- topCenter
-- topRight
-- rightCenter
-- bottomRight
-- bottomCenter
-- bottomLeft
-- leftCenter
-- center
+----
 
+### hideInfoWindow()
+
+Syntax:
+```typescript
+hideInfoWindow() : void
+```
+Example:
+```typescript
+richMarker.hideInfoWindow();
+```
+
+----
+
+### showInfoWindow()
+
+Syntax:
+```typescript
+showInfoWindow() : void
+```
+Example:
+```typescript
+richMarker.showInfoWindow();
+```
+
+----
 
 
 
