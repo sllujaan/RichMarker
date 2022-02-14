@@ -188,7 +188,7 @@ const richMarker = richMap.addMarker({
 });
 
 ### Possible values:
-**[domElement](#configuration)  **
+**[domElement](#configuration)**
 - HTMLElement
 
 **[LatLng](#configuration)**  
