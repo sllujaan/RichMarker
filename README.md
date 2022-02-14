@@ -192,13 +192,13 @@ const richMarker = richMap.addMarker({
 ```
 
 ### Possible values:
-**[domElement:](#configuration)**
+**[domElement:](#addmarker)**
 - HTMLElement
 
-**[LatLng:](#configuration)**  
+**[LatLng:](#addmarker)**  
 - LatLng (google maps class)
 
-**[position:](#configuration)**
+**[position:](#addmarker)**
 - topLeft
 - topCenter
 - topRight
@@ -223,7 +223,7 @@ const htmlMarkerStyle1 = richMap.getMarker("style-1");
 ```
 
 ### Possible values:
-**[style:](#configuration)**
+**[style:](#getmarker)**
 - style-1
 - style-2
 - style-3
@@ -244,7 +244,7 @@ const htmlInfoWindowStyle1 = richMap.getInfoWindow("style-1");
 ```
 
 ### Possible values:
-**[style:](#configuration)**
+**[style:](#getinfowindow)**
 - style-1
 - style-2
 - style-3
@@ -329,10 +329,10 @@ richMarker.addInfoWindow({
 ```
 
 ### Possible values:
-**[domElement:](#configuration)**
+**[domElement:](#addinfowindow)**
 - HTMLElement
 
-**[offset:](#configuration)**
+**[offset:](#addinfowindow)**
 - CSS Value
 
 ----
