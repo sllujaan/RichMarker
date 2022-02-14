@@ -176,7 +176,7 @@ const richMap = new RichMap({
 
 Syntax:
 ```typescript
-richMap.addMarker({
+addMarker({
   domElement: HTMLElement,
   LatLng: LatLng,   // google maps class
   position: string
@@ -215,7 +215,7 @@ const richMarker = richMap.addMarker({
 
 Syntax:
 ```typescript
-richMap.getMarker(style: string): HTMLElement
+getMarker(style: string): HTMLElement
 ```
 Example:
 ```typescript
@@ -236,7 +236,7 @@ const htmlMarkerStyle1 = richMap.getMarker("style-1");
 
 Syntax:
 ```typescript
-richMap.getInfoWindow(style: string): HTMLElement
+getInfoWindow(style: string): HTMLElement
 ```
 Example:
 ```typescript
