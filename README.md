@@ -244,6 +244,66 @@ const htmlInfoWindowStyle1 = richMap.getInfoWindow("style-1");
 - style-3
 
 
+## RichMarker Class
+
+Example:
+```typescript
+const richMarker = richMap.addMarker({
+  domElement: HTMLElement,
+  LatLng: LatLng,   // google maps class
+  position: string
+}) : RichMarker
+```
+
+## Functions:
+- [hide()](#configuration)
+- [show()](#configuration)
+- [getZIndex()](#configuration)
+- [addInfoWindow()](#configuration)
+- [hideInfoWindow()](#configuration)
+- [showInfoWindow()](#configuration)
+
+## hide()
+
+Syntax:
+```typescript
+hide() : void
+```
+Example:
+```typescript
+richMarker.hide();
+```
+
+## show()
+
+Syntax:
+```typescript
+show() : void
+```
+Example:
+```typescript
+richMarker.show();
+```
+
+### Possible values:
+**[domElement:](#configuration)**
+- HTMLElement
+
+**[LatLng:](#configuration)**  
+- LatLng (google maps class)
+
+**[position:](#configuration)**
+- topLeft
+- topCenter
+- topRight
+- rightCenter
+- bottomRight
+- bottomCenter
+- bottomLeft
+- leftCenter
+- center
+
+
 
 
 
