@@ -364,10 +364,81 @@ richMarker.showInfoWindow();
 ----
 
 
+# RichInfoWindow Class
 
+Example:
+```typescript
+const richInfoWindow = richMarker.addInfoWindow({
+  domElement: HTMLElement,
+  offset: string
+});
+```
 
-Rich Map library for google maps with HTML markers and info windows + k-means clustering
+### Functions:
+- [hide()](#configuration)
+- [show()](#configuration)
 
+----
 
+### hide()
+
+Syntax:
+```typescript
+hide() : void
+```
+Example:
+```typescript
+richInfoWindow.hide();
+```
+
+----
+
+### show()
+
+Syntax:
+```typescript
+show() : void
+```
+Example:
+```typescript
+richInfoWindow.show();
+```
+
+----
+
+# Event Listeners
+
+Example:
+```typescript
+// Event Listener for the richMarker
+richMarker.addEventListener("click", e => {
+  //console.log(e);
+});
+richMarker.addEventListener("mouseenter", e => {
+  //console.log(e);
+});
+richMarker.addEventListener("mouseleave", e => {
+  //console.log(e);
+});
+
+// Event Listener for the richInfoWindow
+richInfoWindow.addEventListener("click", e => {
+  //console.log(e);
+});
+richInfoWindow.addEventListener("mouseenter", e => {
+  //console.log(e);
+});
+richInfoWindow.addEventListener("mouseleave", e => {
+  //console.log(e);
+});
+```
 
 ## [Click Here to See Live Demo](https://sllujaan.github.io/RichMarker/)🚀
+
+# Get
+
+[![button](https://user-images.githubusercontent.com/31973579/147866642-b3697624-ff2f-4e87-a829-bf2cc9473a66.png)](https://github.com/sllujaan/TS)
+
+# About
+
+Salman Altaf (sllujaan44@gmail.com).
