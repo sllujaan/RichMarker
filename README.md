@@ -165,12 +165,14 @@ const richMap = new RichMap({
 });
 ```
 
-## Functions:
+### Functions:
 - [addMarker()](#configuration)
 - [getMarker()](#configuration)
 - [getInfoWindow()](#configuration)
 
-## addMarker()
+----
+
+### addMarker()
 
 Syntax:
 ```typescript
@@ -207,7 +209,9 @@ const richMarker = richMap.addMarker({
 - leftCenter
 - center
 
-## getMarker()
+----
+
+### getMarker()
 
 Syntax:
 ```typescript
@@ -226,7 +230,9 @@ const htmlMarkerStyle1 = richMap.getMarker("style-1");
 - style-4
 - style-5
 
-## getInfoWindow()
+----
+
+### getInfoWindow()
 
 Syntax:
 ```typescript
@@ -243,6 +249,7 @@ const htmlInfoWindowStyle1 = richMap.getInfoWindow("style-1");
 - style-2
 - style-3
 
+----
 
 ## RichMarker Class
 
@@ -255,7 +262,7 @@ const richMarker = richMap.addMarker({
 }) : RichMarker
 ```
 
-## Functions:
+### Functions:
 - [hide()](#configuration)
 - [show()](#configuration)
 - [getZIndex()](#configuration)
@@ -263,7 +270,9 @@ const richMarker = richMap.addMarker({
 - [hideInfoWindow()](#configuration)
 - [showInfoWindow()](#configuration)
 
-## hide()
+----
+
+### hide()
 
 Syntax:
 ```typescript
@@ -274,7 +283,9 @@ Example:
 richMarker.hide();
 ```
 
-## show()
+----
+
+### show()
 
 Syntax:
 ```typescript
