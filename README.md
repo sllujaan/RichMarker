@@ -170,6 +170,42 @@ const richMap = new RichMap({
 - [getMarker()](#configuration)
 - [getInfoWindow()](#configuration)
 
+## addMarker()
+
+Syntax:
+```typescript
+richMap.addMarker({
+  domElement: HTMLElement,
+  LatLng: LatLng,   // google maps class
+  position: string
+}) : RichMarker
+```
+Example:
+const richMarker = richMap.addMarker({
+  domElement: richMap.getMarker("style-1"),
+  LatLng: { lat: -25.363, lng: 131.044 },
+  position: "bottomCenter"
+});
+
+### Possible values:
+**[domElement](#configuration)  **
+- HTMLElement
+
+**[LatLng](#configuration)**  
+- LatLng (google maps class)
+
+**[position](#configuration)**
+- topLeft
+- topCenter
+- topRight
+- rightCenter
+- bottomRight
+- bottomCenter
+- bottomLeft
+- leftCenter
+- center
+
+
 
 
 Rich Map library for google maps with HTML markers and info windows + k-means clustering
