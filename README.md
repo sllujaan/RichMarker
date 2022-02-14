@@ -165,7 +165,7 @@ const richMap = new RichMap({
 });
 ```
 
-## Functions:
+### Functions:
 - [addMarker()](#configuration)
 - [getMarker()](#configuration)
 - [getInfoWindow()](#configuration)
@@ -262,7 +262,7 @@ const richMarker = richMap.addMarker({
 }) : RichMarker
 ```
 
-## Functions:
+### Functions:
 - [hide()](#configuration)
 - [show()](#configuration)
 - [getZIndex()](#configuration)
@@ -374,7 +374,7 @@ const richInfoWindow = richMarker.addInfoWindow({
 });
 ```
 
-## Functions:
+### Functions:
 - [hide()](#configuration)
 - [show()](#configuration)
 
