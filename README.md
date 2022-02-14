@@ -190,13 +190,13 @@ const richMarker = richMap.addMarker({
 ```
 
 ### Possible values:
-**[domElement](#configuration)**
+**[domElement:](#configuration)**
 - HTMLElement
 
-**[LatLng](#configuration)**  
+**[LatLng:](#configuration)**  
 - LatLng (google maps class)
 
-**[position](#configuration)**
+**[position:](#configuration)**
 - topLeft
 - topCenter
 - topRight
@@ -206,6 +206,43 @@ const richMarker = richMap.addMarker({
 - bottomLeft
 - leftCenter
 - center
+
+## getMarker()
+
+Syntax:
+```typescript
+richMap.getMarker(style: string): HTMLElement
+```
+Example:
+```typescript
+const htmlMarkerStyle1 = richMap.getMarker("style-1");
+```
+
+### Possible values:
+**[style:](#configuration)**
+- style-1
+- style-2
+- style-3
+- style-4
+- style-5
+
+## getInfoWindow()
+
+Syntax:
+```typescript
+richMap.getInfoWindow(style: string): HTMLElement
+```
+Example:
+```typescript
+const htmlInfoWindowStyle1 = richMap.getInfoWindow("style-1");
+```
+
+### Possible values:
+**[style:](#configuration)**
+- style-1
+- style-2
+- style-3
+
 
 
 
