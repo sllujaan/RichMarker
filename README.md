@@ -181,11 +181,13 @@ richMap.addMarker({
 }) : RichMarker
 ```
 Example:
+```typescript
 const richMarker = richMap.addMarker({
   domElement: richMap.getMarker("style-1"),
   LatLng: { lat: -25.363, lng: 131.044 },
   position: "bottomCenter"
 });
+```
 
 ### Possible values:
 **[domElement](#configuration)**
